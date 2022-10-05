@@ -6,7 +6,6 @@ header,
     font-size: 14px;
     max-width: 1000px;
     display: flex;
-
     flex-wrap: wrap;
 }
 
@@ -15,7 +14,6 @@ header,
 }
 
 .profile_image {
-    /* position: relative; */
     height: 150px;
     width: 150px;
     border-radius: 75px;
@@ -30,14 +28,8 @@ header,
     padding-left: 10px;
     margin-left: 10px;
     padding-top: 20px;
-    /* margin-left: 200px;
-    width: 600px;
-    height: 204px;;
-    position: absolute; top: 0px;left: 70px; right: 0px;  */
     text-align: left;
-    /* padding: 5px 15px; */
     background-color: white;
-    /* border: 1px solid red; */
     border-top: 1px solid black;
 
     border-right: 1px solid black;
@@ -49,77 +41,52 @@ header,
     flex: 1 2 227px;
     background-color: rgb(50, 59, 76);
     border-top: 1px solid black;
-    
-    /* border: 1px solid blue;  */
-
 }
 
 
 .left_aside {
     color: white;
-    /* position: absolute; top: 214px;left: 0px; */
     padding-left: 15px;
     flex: 1 2 212px;
-    /* border: 1px solid aquamarine;  */
-
-
-
-    /* height: 1000px; */
     background-color: rgb(50, 59, 76);
     border-bottom: 1px solid black;
-
 }
-
-
 
 .right_aside {
     text-align: left;
-    /* position: absolute; top: 180px; left: 270px;right: 0px; */
     background-color: white;
     margin-top: 0px;
     width: 100%;
     padding-left: 20px;
     height: 1000px;
     flex: 3 1 600px;
-    /* border: 1px brown solid; */
     padding-bottom: 0px;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-
-
-
 }
 
 .flex-container {
     display: flex;
     align-items: stretch;
     max-width: 1000px;
-
-
 }
 
 .reference1 {
     text-align: left;
-    /* position: absolute; top: 180px; left: 270px;right: 0px; */
     background-color: white;
-    /* width: 100%; */
     padding-left: 10px;
     height: 160px;
     flex: 2 1 200px;
-    /* border: 1px green solid; */
     padding-bottom: 0px;
     margin-top: 33px;
 }
 
 .reference2 {
     text-align: left;
-    /* position: absolute; top: 180px; left: 270px;right: 0px; */
     background-color: white;
-    /* width: 100%; */
     padding-left: 10px;
     height: 160px;
     flex: 2 1 200px;
-    /* border: 1px green solid; */
     padding-bottom: 0px;
     margin-top: 58px;
 }
@@ -130,16 +97,13 @@ header,
 .first_footer {
     padding: 0px 0px;
     
-
 }
 .form{
     margin: 25px 10px;
 }
 
 .second_footer , .third_footer{
-    /* border: 1px solid black; */
     padding-top: 400px;
-    
 }
 .button{
     margin-left: 10px;
