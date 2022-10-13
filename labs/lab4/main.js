@@ -74,7 +74,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=7378a9489
         console.log(data);
         document.querySelector('.package-name').textContent = "City: "+data.name;
         document.querySelector('.temp').innerHTML = "<span class='span'>Temperature: </span>" + Math.round(data.main.temp - 273) + '&deg';        
-        document.querySelector('.disclaimer').textContent ="Weather description: "+ data.weather[0]['description'];
+        document.querySelector('.description').textContent ="Weather description: "+ data.weather[0]['description'];
         document.querySelector('.img_weather li').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0] ['icon']}@2x.png">`;
     })
     .catch(e => {'Some problems'});
