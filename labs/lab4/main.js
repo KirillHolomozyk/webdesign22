@@ -40,21 +40,15 @@ modalButton.addEventListener('click', modalOpen);
 let modalCloseButton= document.querySelector('.modal-close');
 modalCloseButton.addEventListener('click', modalClose);
 
-async function addComment(body, user_name){
+function addComment(body, user_name){
     let comments = document.querySelector('.comments');
-    let div = document.createElement('dev');
+    let div = document.createElement('div');
     div.className = 'output';
     let CustomersContent = `
-    <div class="comment">
-        
-    
         <h3><span>Username:</span> ${user_name} </h3>
         <p>
             Comment: ${body}
-        </p>
-        
-        
-    </div>`;
+        </p>`
     div.innerHTML = CustomersContent;
     comments.append(div);
 }
@@ -74,6 +68,19 @@ function parse_json(data){
         addComment(body, user_name);
     } 
 }
+fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=7378a94894ca27685ed9113fb79889bd')
+    .then(res => res.json())
+    .then(function(data){
+        console.log(data);
+        document.querySelector('.package-name').textContent = "City: "+data.name;
+        document.querySelector('.temp').innerHTML = "<span class='span'>Temperature: </span>" + Math.round(data.main.temp - 273) + '&deg';        
+        document.querySelector('.disclaimer').textContent ="Weather description: "+ data.weather[0]['description'];
+        document.querySelector('.img_weather li').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0] ['icon']}@2x.png">`;
+    })
+    .catch(e => {'Some problems'});
+
+
+
 
 
 

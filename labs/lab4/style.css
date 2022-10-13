@@ -421,27 +421,46 @@ button:hover{
     left: 10%;
 }
 
-.output_com{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-}
+
 .h2_com{
     text-align: center;
 }
-.comment{
+.output{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 5px 0 5px 0;
     padding: 5px;
 }
-.comment span{
+.output span{
     font-weight: 600;
 }
-.comment{
+.output{
     background: var(--second-color);
 }
-.comment:hover{
+.output:hover{
     background: var(--main-color);
+}
+.package{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/weather-images.jpeg);
+    background-size: cover;
+    padding: 12px 0;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.package:hover{
+    letter-spacing: 0.2rem;
+
+}
+.img_weather{
+    width: 80px;
+    height: 80px;
+}
+.button-primary{
+    width: 40%;
 }
