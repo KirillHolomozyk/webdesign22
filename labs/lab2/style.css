@@ -17,12 +17,6 @@ body {
   position: relative;
 }
 
-/* body::before {
-  content: "";
-  position: relative;
-  opacity: 0.2;
-  background-image: url("./images/military-background.jpg");
-} */
 .header-site {
   display: flex;
   flex-wrap: wrap;

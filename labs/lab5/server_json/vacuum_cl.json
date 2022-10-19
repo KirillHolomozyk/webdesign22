@@ -1,0 +1,40 @@
+{
+    "cleaners": [
+      {
+        "id": 1,
+        "title": "THOMAS Perfect Air Animal Pure",
+        "power": "1700 Вт",
+        "image": "./images/sample1.jpeg"
+      },
+      {
+        "id": 2,
+        "title": "Kernau KVC 301",
+        "power": "700 Вт",
+        "image": "./images/sample2.webp"
+      },
+      {
+        "id": 3,
+        "title": "KARCHER VC 5 Premium",
+        "power": "1000 Вт",
+        "image": "./images/sample3.jpeg"
+      },
+      {
+        "id": 4,
+        "title": "ELECTROLUX PQ92ALGS",
+        "power": "800 Вт",
+        "image": "./images/sample4.webp"
+      },
+      {
+        "id": 5,
+        "title": "THOMAS AQUA+ ALLERGY & FAMILY",
+        "power": "280 Вт",
+        "image": "./images/sample5.webp"
+      },
+      {
+        "id": 6,
+        "title": "homas Vestfalia XT",
+        "power": "400 Вт",
+        "image": "./images/sample6.jpeg"
+      }
+    ]
+  }
