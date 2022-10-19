@@ -3,6 +3,7 @@ let search = document.querySelector('.search-box');
 document.querySelector('#search-icon').onclick = () => {
     search.classList.toggle('active');
     navbar.classList.remove('active');
+    section.style.display = 'none';
 
 }
 
@@ -11,7 +12,7 @@ let navbar = document.querySelector('.navbar');
 document.querySelector('#menu-icon').onclick = () => {
     navbar.classList.toggle('active');
     search.classList.remove('active');
-
+    section.style.display = 'none';
 }
 
 window.onscroll = () =>{
@@ -79,7 +80,20 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=7378a9489
     })
     .catch(e => {'Some problems'});
 
+//cart
+let section = document.querySelector('.cart');
+let cart= document.querySelector('.search_cart');
+cart.onclick = ()=>{
+    // cart.style.background = 'blue';
+    section.style.display = 'flex';
+    search.classList.remove('active');
+    navbar.classList.remove('active');
 
+}
+let close = document.querySelector('.close');
+close.onclick = ()=>{
+    section.style.display = 'none';
+}
 
 
 
